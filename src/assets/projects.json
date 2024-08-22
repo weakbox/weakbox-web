@@ -11,7 +11,7 @@
         "id": "1",
         "name": "Guess the Year (WIP)",
         "description": "Guess the year of the event! Inspired by davjhan.com.",
-        "thumbnail": "public/guess_the_year.jpg",
+        "thumbnail": "./guess_the_year.jpg",
         "website": "https://weakbox.github.io/guess-the-year-game/",
         "github": "https://github.com/weakbox/guess-the-year-game"
     },
