@@ -1,0 +1,58 @@
+[
+    {
+        "id": "0",
+        "name": "Fantasy Hockey Dashboard",
+        "description": "A simple web app to view stats from an ESPN Fantasy Hockey league.",
+        "thumbnail": "https://github.com/weakbox/Fantasy-Hockey-Dashboard/blob/main/images/interface.png?raw=true",
+        "website": "https://weakbox.github.io/Fantasy-Hockey-Dashboard/",
+        "github": "https://github.com/weakbox/Fantasy-Hockey-Dashboard"
+    },
+    {
+        "id": "1",
+        "name": "Guess the Year (WIP)",
+        "description": "Guess the year of the event! Inspired by davjhan.com.",
+        "thumbnail": "public/guess_the_year.jpg",
+        "website": "https://weakbox.github.io/guess-the-year-game/",
+        "github": "https://github.com/weakbox/guess-the-year-game"
+    },
+    {
+        "id": "2",
+        "name": "Markdown Previewer",
+        "description": "Submission for freeCodeCamp's Markdown Previewer Project.",
+        "thumbnail": "https://github.com/weakbox/FCC-Markdown-Previewer/raw/main/images/interface.jpg",
+        "website": "https://weakbox.github.io/FCC-Markdown-Previewer/",
+        "github": "https://github.com/weakbox/FCC-Markdown-Previewer"
+    },
+    {
+        "id": "3",
+        "name": "JavaScript Calculator",
+        "description": "Submission for freeCodeCamp's JavaScript Calculator Project.",
+        "thumbnail": "https://github.com/weakbox/FCC-JavaScript-Calculator/raw/main/images/interface.jpg",
+        "website": "https://weakbox.github.io/FCC-JavaScript-Calculator/",
+        "github": "https://github.com/weakbox/FCC-JavaScript-Calculator"
+    },
+    {
+        "id": "4",
+        "name": "Drum Machine",
+        "description": "Submission for freeCodeCamp's Drum Machine Project.",
+        "thumbnail": "https://github.com/weakbox/FCC-Drum-Machine/raw/main/images/interface.jpg",
+        "website": "https://weakbox.github.io/FCC-Drum-Machine/",
+        "github": "https://github.com/weakbox/FCC-Drum-Machine"
+    },
+    {
+        "id": "5",
+        "name": "Pomodoro Clock",
+        "description": "Submission for freeCodeCamp's 25 + 5 Clock Project.",
+        "thumbnail": "https://github.com/weakbox/FCC-Pomodoro-Clock/raw/main/images/interface.jpg",
+        "website": "https://weakbox.github.io/FCC-Pomodoro-Clock/",
+        "github": "https://github.com/weakbox/FCC-Pomodoro-Clock"
+    },
+    {
+        "id": "6",
+        "name": "Random Quote Machine",
+        "description": "Submission for freeCodeCamp's Random Quote Machine Project.",
+        "thumbnail": "https://github.com/weakbox/FCC-Random-Quote-Machine/raw/main/images/interface.jpg",
+        "website": "https://weakbox.github.io/FCC-Random-Quote-Machine/",
+        "github": "https://github.com/weakbox/FCC-Random-Quote-Machine"
+    }
+]

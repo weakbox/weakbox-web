@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$border: 1px solid lightgrey;
+$radius: 8px;
+
+.project-container {
+  margin: 1rem;
+  overflow: hidden;
+  border: $border;
+  border-radius: $radius;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+  .project-image {
+      display: block; // Fixes small gap under image.
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      object-position: top;
+      border-bottom: $border;
+  }
+
+  .project-body-container {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    .project-button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      button {
+        border: $border;
+      }
+    }
+  }
+}
