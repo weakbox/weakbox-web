@@ -1,0 +1,55 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 0.25rem solid white;
+
+    .container-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 1rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+    
+        a {
+            font-weight: 400;
+            color: inherit;
+            transition: color 0.25s;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: green;
+        }
+    }
+
+    .hire {
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        a {
+            color: inherit;
+            transition: color 0.25s;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: green;
+        }
+    }
+}
+
+.lazy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}

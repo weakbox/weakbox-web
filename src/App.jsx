@@ -2,6 +2,8 @@ import './App.scss'
 import Project from './components/Project'
 import projects from './assets/projects.json'
 
+import Navbar from './components/Navbar';
+
 const renderProjectList = () => 
   projects.map(project => 
     <Project
@@ -17,11 +19,10 @@ const renderProjectList = () =>
 function App() {
   return (
     <>
-      <h1>weakbox.com</h1>
-      <h3>Alpha 1.0</h3>
-      {renderProjectList()}
+      <Navbar/>
+      <p className="lazy">Website currently under construction! Check back soon!</p>
     </>
   )
 }
 
-export default App
+export default App;
