@@ -1,30 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-$border: 1px solid lightgrey;
-$radius: 8px;
+$border: 1px solid silver;
+$radius: 1rem;
 
 .project-container {
-  margin: 1rem;
+  color: var(--primary-text-color);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.25);
   overflow: hidden;
-  border: $border;
   border-radius: $radius;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-
-  .project-image {
-      display: block; // Fixes small gap under image.
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: top;
-      border-bottom: $border;
-  }
+  height: 16rem;
+  width: 50%;
+  border: 1px solid var(--border-color);
 
   .project-body-container {
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.50);
     padding: 1rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;

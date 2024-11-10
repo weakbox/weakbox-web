@@ -10,7 +10,7 @@ export default function Navbar(props) {
                 <a href="mailto:hello@weakbox.com">Email</a>
             </div>
             <div className="hire">
-                <h2><a href="mailto:hello@weakbox.com">Hire Me!</a></h2>
+                <h2><a href="mailto:hello@weakbox.com?subject=Hiring">Hire Me!</a></h2>
             </div>
         </nav>
     );

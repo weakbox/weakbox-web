@@ -1,19 +1,29 @@
 * {
   // debug border thing
   // border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
+  --primary-bg-color: #142F43;
+  --primary-text-color: rgb(255, 255, 255);
+  --primary-accent-color: #FFAB4C;
+  --secondary-accent-color: #FF5F7E;
+  --tertiary-accent-color: #B000B9;
+  --border-color: silver;
+  
   font-family: Rubik, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: #ffffff;
-  background-color: #51a86b;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -moz-osx-font-smoothing: grayscale;
 }

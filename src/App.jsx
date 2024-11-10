@@ -21,6 +21,7 @@ function App() {
     <>
       <Navbar/>
       <p className="lazy">Website currently under construction! Check back soon!</p>
+      {renderProjectList()}
     </>
   )
 }
