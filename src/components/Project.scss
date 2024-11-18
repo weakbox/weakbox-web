@@ -1,7 +1,7 @@
 .project-container {
   align-items: center;
-  backdrop-filter: blur(15px);
-  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(25px) saturate(125%);
+  background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   box-shadow: var(--background-shadow);
@@ -13,11 +13,12 @@
   overflow: hidden;
   padding: 1rem;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.25s;
   width: 100%;
 
   .project-thumbnail {
     aspect-ratio: 1;
-    border-radius: 50%;
+    border-radius: var(--border-radius);
     width: 12rem;
   }
 
@@ -32,4 +33,8 @@
       border: 1px solid var(--border-color);
     }
   }
+}
+
+.project-container:hover {
+  background-color: rgba(0, 0, 0, 0.35);
 }
