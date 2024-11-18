@@ -20,8 +20,10 @@ function App() {
   return (
     <>
       <Navbar/>
-      <p className="lazy">Website currently under construction! Check back soon!</p>
-      {renderProjectList()}
+      <p className="lazy">Hi! Thanks for checking out my portfolio! Note that this site isn't quite done yet, so check back soon!</p>
+      <div className="project-grid">
+        {renderProjectList()}
+      </div>
     </>
   )
 }

@@ -8,11 +8,14 @@
 
 :root {
   --primary-bg-color: #142F43;
-  --primary-text-color: rgb(255, 255, 255);
   --primary-accent-color: #FFAB4C;
   --secondary-accent-color: #FF5F7E;
   --tertiary-accent-color: #B000B9;
-  --border-color: silver;
+  --primary-bg-gradient: linear-gradient(0deg, rgba(20,47,67,1) 0%, rgba(176,0,185,1) 75%, rgba(255,95,126,1) 100%);
+  --primary-text-color: rgb(255, 255, 255);
+  --border-color: rgba(90, 90, 90, 0.79);
+  --border-radius: 0.5rem;
+  --background-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   
   font-family: Rubik, sans-serif;
   line-height: 1.5;
@@ -20,7 +23,9 @@
 
   color-scheme: light dark;
   color: var(--primary-text-color);
-  background-color: var(--primary-bg-color);
+  
+  // Background setup:
+  background: url("./background.jpg");
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
