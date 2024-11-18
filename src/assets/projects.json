@@ -2,18 +2,34 @@
     {
         "id": "0",
         "name": "Fantasy Hockey Dashboard",
-        "description": "A simple web app to view stats from an ESPN Fantasy Hockey league.",
+        "description": "A more in-depth way to track team performance in an ESPN Fantasy Hockey league. Utilizes a custom REST API written by me for data.",
         "thumbnail": "https://github.com/weakbox/Fantasy-Hockey-Dashboard/blob/main/images/interface.png?raw=true",
         "website": "https://weakbox.github.io/Fantasy-Hockey-Dashboard/",
         "github": "https://github.com/weakbox/Fantasy-Hockey-Dashboard"
     },
     {
         "id": "1",
-        "name": "Guess the Year (WIP)",
-        "description": "Guess the year of the event! Inspired by davjhan.com.",
+        "name": "Guess the Year",
+        "description": "A Windows XP inspired game where you try to guess the correct year of certain events.",
         "thumbnail": "./guess_the_year.jpg",
         "website": "https://weakbox.github.io/guess-the-year-game/",
         "github": "https://github.com/weakbox/guess-the-year-game"
+    },
+    {
+        "id": "7",
+        "name": "XM-23 Emulator",
+        "description": "A fully-featured emulator for the XM-23 Reduced Instruction Set Computer. Implements over 40 unique instructions, a read/write cache, and an interrupt handler.",
+        "thumbnail": "https://github.com/weakbox/XM23-Emulator/blob/master/images/interface.png?raw=true",
+        "website": "",
+        "github": "https://github.com/weakbox/XM23-Emulator"
+    },  
+    {
+        "id": "8",
+        "name": "Autonomous Leak Detection Robot",
+        "description": "Developed a fully autonomous robot that detected and marked high-humidity areas.",
+        "thumbnail": "",
+        "website": "",
+        "github": ""
     },
     {
         "id": "2",
