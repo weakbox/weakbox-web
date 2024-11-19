@@ -1,7 +1,7 @@
 import './App.scss'
 import Project from './components/Project'
 import projects from './assets/projects.json'
-
+import About from './components/About';
 import Navbar from './components/Navbar';
 
 const renderProjectList = () => 
