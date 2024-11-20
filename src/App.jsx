@@ -19,8 +19,8 @@ const renderProjectList = () =>
 function App() {
   return (
     <>
-      <Navbar/>
-      <p className="lazy">Hi! Thanks for checking out my portfolio! Note that this site isn't quite done yet, so check back soon!</p>
+      <About/>
+      <p className="lazy">Thanks for checking out my website! I'm currently working on changing a few things around, so sorry for the mess.</p>
       <div className="project-grid">
         {renderProjectList()}
       </div>

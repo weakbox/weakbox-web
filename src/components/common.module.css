@@ -1,0 +1,12 @@
+.glassmorphism {
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--background-shadow);
+  overflow: hidden;
+}
+
+.meButton {
+  background-color: beige;
+}
