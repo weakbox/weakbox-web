@@ -8,7 +8,7 @@
 :root {
   --primary-bg-color: #141e25;
   --primary-accent-color: #30d738;
-  --secondary-accent-color: #2fa98d;
+  --secondary-accent-color: #2c4050;
   --tertiary-accent-color: #B000B9;
   --primary-bg-gradient: linear-gradient(0deg, rgba(20,47,67,1) 0%, rgba(176,0,185,1) 75%, rgba(255,95,126,1) 100%);
   --primary-text-color: rgb(255, 255, 255);
@@ -26,6 +26,7 @@
   // Background setup:
   background: url("./assets/background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 
   font-synthesis: none;
