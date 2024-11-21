@@ -4,7 +4,7 @@ import featuredProjects from "../assets/featuredProjects.json";
 function Project(props) {
  return (
     <div className={styles.featuredProjectCard}>
-        <img className={styles.projectThumbnail} src={props.thumbnail} alt="Project thumbnail" />
+        <img className={styles.projectThumbnail} src={props.thumbnail} alt={`${props.name} project thumbnail`} />
         <div className={styles.textWrapper}>
             <h2>{props.name}</h2>
             <p>{props.description}</p>
@@ -40,7 +40,7 @@ export default function FeaturedProjects() {
     return (
         <div className={styles.featuredProjects}>
             <div className={styles.textWrapper}>
-                <h1>Featured Projects</h1>
+                <h2>Featured Projects</h2>
                 <p>I've made a bunch of stuff, but here are some of my favorites:</p>
             </div>
             <div className={styles.featuredProjectsWrapper}>

@@ -13,7 +13,7 @@ export default function About() {
                     <a className={styles.button} href="mailto:hello@weakbox.com" target="_blank"><i className="fa-solid fa-envelope"></i> Email</a>
                 </div>
             </div>
-            <img src={headerImage} alt="A picture of me and my friends in the back of a truck." />
+            <img src={headerImage} alt="A picture of me and my friends in the back of a truck" />
         </div>
     );
 }

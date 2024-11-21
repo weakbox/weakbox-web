@@ -1,6 +1,6 @@
 .featuredProjects {
     width: 100%;
-    padding: 1.25rem 2rem 2rem 2rem;
+    padding: 1rem;
     background-color: var(--secondary-accent-color);
 
     display: flex;
@@ -9,7 +9,6 @@
     align-items: center;
     gap: 1rem;
 
-    /* Line-height adjustment for headings */
     h1, h2, h3, h4, h5, h6 {
         line-height: 36px;
     }
@@ -27,7 +26,10 @@
         gap: 1rem;
     }
 
+    /* I'm not a big fan of how the cards are */
     .featuredProjectCard {
+        border: 1px solid var(--border-color);
+        max-width: 25rem;
         min-width: 15rem;
         flex: 1 1 0;
         align-items: center;
