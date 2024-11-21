@@ -1,0 +1,81 @@
+.featuredProjects {
+    width: 100%;
+    padding: 2rem;
+    background: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    .featuredProjectsWrapper {
+        /* This should likely be changed to grid so the bottom element isn't a different size. */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .featuredProjectCard {
+        flex: 1 1 0;
+        min-width: 15rem;
+        max-width: 35rem;
+        align-items: center;
+        backdrop-filter: blur(10px) saturate(125%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--background-shadow);
+        color: var(--primary-text-color);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        grid-row: span 2 / auto;
+        justify-content: center;
+        overflow: hidden;
+        padding: 1rem;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        transition: all 300ms;
+      
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(30px);
+        }
+
+        .projectThumbnail {
+          aspect-ratio: 1;
+          border-radius: var(--border-radius);
+          width: 12rem;
+        }
+      
+        .projectButtonContainer {
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          justify-content: center;
+      
+          .button {
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background-color: var(--primary-bg-color);
+            color: var(--primary-text-color);
+            box-shadow: var(--background-shadow);
+            text-decoration: none;
+            transition: all 150ms ease-out;
+
+            &:hover {
+                background-color: var(--secondary-accent-color);
+                transform: scale(1.05);
+            }
+        }
+        }
+      }
+}

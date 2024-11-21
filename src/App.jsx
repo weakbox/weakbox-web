@@ -1,29 +1,12 @@
 import './App.scss'
-import Project from './components/Project'
-import projects from './assets/projects.json'
 import About from './components/About';
-import Navbar from './components/Navbar';
-
-const renderProjectList = () => 
-  projects.map(project => 
-    <Project
-      key={project.id}
-      name={project.name} 
-      description={project.description} 
-      thumbnail={project.thumbnail}
-      website={project.website}
-      github={project.github}
-    />
-  );
+import FeaturedProjects from './components/Projects';
 
 function App() {
   return (
     <>
-      <About/>
-      <p className="lazy">Thanks for checking out my website! I'm currently working on changing a few things around, so sorry for the mess.</p>
-      <div className="project-grid">
-        {renderProjectList()}
-      </div>
+      <About />
+      <FeaturedProjects />
     </>
   )
 }

@@ -1,5 +1,6 @@
+/* TODO: Clean up this CSS (wrap implementation is poor) */
+
 .about {
-    transition: all 250ms;
     width: 100%;
     padding: 2rem;
     display: flex;
@@ -51,7 +52,7 @@
             color: var(--primary-text-color);
             box-shadow: var(--background-shadow);
             text-decoration: none;
-            transition: all 250ms;
+            transition: all 150ms ease-out;
 
             &:hover {
                 background-color: var(--secondary-accent-color);
@@ -66,7 +67,7 @@
         max-width: 50%;
         border-radius: var(--border-radius);
         box-shadow: var(--background-shadow);
-        transition: all 250ms;
+        transition: all 150ms ease-out;
 
         @media only screen and (max-width: 768px) {
             height: auto;
