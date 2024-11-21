@@ -7,6 +7,7 @@ function App() {
     <>
       <About />
       <FeaturedProjects />
+      <p style={{color: "black"}}>There's more to come! Hang tight!</p>
     </>
   )
 }

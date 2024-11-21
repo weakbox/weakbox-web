@@ -4,13 +4,21 @@ import featuredProjects from "../assets/featuredProjects.json";
 function Project(props) {
  return (
     <div className={styles.featuredProjectCard}>
-      <img className={styles.projectThumbnail} src={props.thumbnail} alt="Project thumbnail" />
-      <h2>{props.name}</h2>
-      <p>{props.description}</p>
-      <div className={styles.projectButtonContainer}>
-        <a className={styles.button} href={props.website} target="_blank"><i className="fa-solid fa-link"></i> Website</a>
-        <a className={styles.button} href={props.github} target="_blank"><i className="fa-brands fa-github"></i> Source</a>
-      </div>     
+        <img className={styles.projectThumbnail} src={props.thumbnail} alt="Project thumbnail" />
+        <div className={styles.textWrapper}>
+            <h2>{props.name}</h2>
+            <p>{props.description}</p>
+        </div>
+        <div className={styles.projectButtonContainer}>
+            {props.website && (
+                <a className={styles.button} href={props.website} target="_blank" rel="noopener noreferrer">
+                    <i className="fa-solid fa-link"></i> Website
+                </a>
+            )}
+            <a className={styles.button} href={props.github} target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-github"></i> Source
+            </a>
+        </div>     
     </div>
   )
 }
@@ -31,7 +39,10 @@ export default function FeaturedProjects() {
     
     return (
         <div className={styles.featuredProjects}>
-            <h2>I'm always working on new things. Here are some of my favorites:</h2>
+            <div className={styles.textWrapper}>
+                <h1>Featured Projects</h1>
+                <p>I've made a bunch of stuff, but here are some of my favorites:</p>
+            </div>
             <div className={styles.featuredProjectsWrapper}>
                 {renderFeaturedProjects()}
             </div>
