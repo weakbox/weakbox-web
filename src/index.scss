@@ -25,6 +25,7 @@
   line-height: 1.5;
   font-weight: 400;
 
+  // There is support for light/dark switching but I didn't like the look of the light mode for now.
   color-scheme: dark;
   color: light-dark(var(--primary-text-color-light), var(--primary-text-color));
 

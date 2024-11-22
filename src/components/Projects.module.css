@@ -71,7 +71,7 @@
                 transition: all 150ms ease-out;
 
                 &:hover {
-                    background-color: light-dark(var(--secondary-accent-color-light), (--secondary-accent-color));
+                    background-color: light-dark(var(--secondary-accent-color-light), var(--secondary-accent-color));
                     transform: scale(1.05);
                 }
             }

@@ -46,7 +46,7 @@ export function Projects() {
         <div className={styles.featuredProjects}>
             <div className={styles.textWrapper}>
                 <h2>Additional Projects</h2>
-                <p>Some of the larger team-based projects from my time at Dalhousie, as well as self-guided web developement work:</p>
+                <p>Some of the larger team-based projects from my time at Dalhousie, as well as self-guided web development work:</p>
             </div>
             <div className={styles.featuredProjectsWrapper}>
                 {renderProjects()}

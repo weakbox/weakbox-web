@@ -3,7 +3,7 @@
         "id": "0",
         "name": "Gambit SSVEP-Based Space Shooter",
         "description": "A space shooter game controlled by brain signals using Steady-State Visually Evoked Potentials (SSVEP) and a Brain-Computer Interface.",
-        "thumbnail": "./src/assets/gambit.jpg",
+        "thumbnail": "./gambit.jpg",
         "website": null,
         "github": null
     },
@@ -11,7 +11,7 @@
         "id": "1",
         "name": "Autonomous Leak Detection Robot",
         "description": "An autonomous robot designed to navigate mazes and detect areas with high humidity to find potential leaks.",
-        "thumbnail": "./src/assets/leakrobot.jpg",
+        "thumbnail": "./leakrobot.jpg",
         "website": "",
         "github": ""
     },
@@ -19,7 +19,7 @@
         "id": "2",
         "name": "Embedded Water Pollution Detector",
         "description": "A mock water pollution detection system built with FreeRTOS and two STM32 Nucleo boards.",
-        "thumbnail": "./src/assets/pollution.jpg",
+        "thumbnail": "./pollution.jpg",
         "website": "",
         "github": ""
     },
@@ -27,7 +27,7 @@
         "id": "3",
         "name": "Job Search Android App",
         "description": "An Android app for posting and browsing job listings, developed using Java and Android Studio.",
-        "thumbnail": "./src/assets/jobapp.jpg",
+        "thumbnail": "./jobapp.jpg",
         "website": "",
         "github": ""
     },
