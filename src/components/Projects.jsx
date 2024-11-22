@@ -1,4 +1,6 @@
 import styles from "./Projects.module.css";
+
+import projects from "../assets/projects.json";
 import featuredProjects from "../assets/featuredProjects.json";
 
 function Project(props) {
@@ -15,15 +17,45 @@ function Project(props) {
                     <i className="fa-solid fa-link"></i> Website
                 </a>
             )}
-            <a className={styles.button} href={props.github} target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-github"></i> Source
-            </a>
+            {props.github && (
+                <a className={styles.button} href={props.github} target="_blank" rel="noopener noreferrer">
+                    <i className="fa-brands fa-github"></i> Source
+                </a>
+            )}
         </div>     
     </div>
   )
 }
 
-export default function FeaturedProjects() {
+// These two components are so similar they can absolutely be refactored:
+export function Projects() {
+    const renderProjects = () => {
+        return projects.map(project => {
+            return <Project
+                key={project.id}
+                name={project.name} 
+                description={project.description} 
+                thumbnail={project.thumbnail}
+                website={project.website}
+                github={project.github}
+            />
+        });
+    };
+
+    return (
+        <div className={styles.featuredProjects}>
+            <div className={styles.textWrapper}>
+                <h2>Additional Projects</h2>
+                <p>Some of the larger team-based projects from my time at Dalhousie, as well as self-guided web developement work:</p>
+            </div>
+            <div className={styles.featuredProjectsWrapper}>
+                {renderProjects()}
+            </div>
+        </div>
+    );
+}
+
+export function FeaturedProjects() {
     const renderFeaturedProjects = () => {
         return featuredProjects.map(project => {
             return <Project

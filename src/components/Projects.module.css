@@ -1,7 +1,8 @@
 .featuredProjects {
+    border-top: 1px solid var(--border-color);
     width: 100%;
     padding: 1rem;
-    background-color: var(--secondary-accent-color);
+    background-color: light-dark(var(--secondary-accent-color-light), var(--secondary-accent-color));
 
     display: flex;
     flex-direction: column;
@@ -14,6 +15,9 @@
     }
 
     .textWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
         padding: 0 1rem;
     }
 
@@ -26,17 +30,14 @@
         gap: 1rem;
     }
 
-    /* I'm not a big fan of how the cards are */
     .featuredProjectCard {
         border: 1px solid var(--border-color);
-        max-width: 25rem;
-        min-width: 15rem;
+        min-width: 20rem;
         flex: 1 1 0;
         align-items: center;
-        background-color: var(--primary-bg-color);
+        background-color: light-dark(var(--primary-bg-color-light), var(--primary-bg-color));
         border-radius: var(--border-radius);
         box-shadow: var(--background-shadow);
-        color: var(--primary-text-color);
 
         display: flex;
         flex-direction: column;
@@ -63,14 +64,14 @@
                 padding: 0.5rem;
                 border: 1px solid var(--border-color);
                 border-radius: var(--border-radius);
-                background-color: var(--primary-bg-color);
-                color: var(--primary-text-color);
+                background-color: light-dark(var(--primary-bg-color-light), (--primary-bg-color));
+                color: light-dark(var(--primary-text-color-light), var(--primary-text-color));
                 box-shadow: var(--background-shadow);
                 text-decoration: none;
                 transition: all 150ms ease-out;
 
                 &:hover {
-                    background-color: var(--secondary-accent-color);
+                    background-color: light-dark(var(--secondary-accent-color-light), (--secondary-accent-color));
                     transform: scale(1.05);
                 }
             }

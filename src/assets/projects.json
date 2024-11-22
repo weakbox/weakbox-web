@@ -1,72 +1,72 @@
 [
     {
         "id": "0",
-        "name": "Fantasy Hockey Dashboard",
-        "description": "A more in-depth way to track team performance in an ESPN Fantasy Hockey league. Utilizes a custom REST API written by me for data.",
-        "thumbnail": "https://github.com/weakbox/Fantasy-Hockey-Dashboard/blob/main/images/interface.png?raw=true",
-        "website": "https://weakbox.github.io/Fantasy-Hockey-Dashboard/",
-        "github": "https://github.com/weakbox/Fantasy-Hockey-Dashboard"
+        "name": "Gambit SSVEP-Based Space Shooter",
+        "description": "A space shooter game controlled by brain signals using Steady-State Visually Evoked Potentials (SSVEP) and a Brain-Computer Interface.",
+        "thumbnail": "./src/assets/gambit.jpg",
+        "website": null,
+        "github": null
     },
     {
         "id": "1",
-        "name": "Guess the Year",
-        "description": "A Windows XP inspired game where you try to guess the correct year of certain events.",
-        "thumbnail": "./guess_the_year.jpg",
-        "website": "https://weakbox.github.io/guess-the-year-game/",
-        "github": "https://github.com/weakbox/guess-the-year-game"
-    },
-    {
-        "id": "7",
-        "name": "XM-23 Emulator",
-        "description": "A fully-featured emulator for the XM-23 Reduced Instruction Set Computer. Implements over 40 unique instructions, a read/write cache, and an interrupt handler.",
-        "thumbnail": "https://github.com/weakbox/XM23-Emulator/blob/master/images/interface.png?raw=true",
-        "website": "",
-        "github": "https://github.com/weakbox/XM23-Emulator"
-    },  
-    {
-        "id": "8",
         "name": "Autonomous Leak Detection Robot",
-        "description": "Developed a fully autonomous robot that detected and marked high-humidity areas.",
-        "thumbnail": "",
+        "description": "An autonomous robot designed to navigate mazes and detect areas with high humidity to find potential leaks.",
+        "thumbnail": "./src/assets/leakrobot.jpg",
         "website": "",
         "github": ""
     },
     {
         "id": "2",
+        "name": "Embedded Water Pollution Detector",
+        "description": "A mock water pollution detection system built with FreeRTOS and two STM32 Nucleo boards.",
+        "thumbnail": "./src/assets/pollution.jpg",
+        "website": "",
+        "github": ""
+    },
+    {
+        "id": "3",
+        "name": "Job Search Android App",
+        "description": "An Android app for posting and browsing job listings, developed using Java and Android Studio.",
+        "thumbnail": "./src/assets/jobapp.jpg",
+        "website": "",
+        "github": ""
+    },
+    {
+        "id": "4",
         "name": "Markdown Previewer",
-        "description": "Submission for freeCodeCamp's Markdown Previewer Project.",
+        "description": "A simple real time text to Markdown converter.",
         "thumbnail": "https://github.com/weakbox/FCC-Markdown-Previewer/raw/main/images/interface.jpg",
         "website": "https://weakbox.github.io/FCC-Markdown-Previewer/",
         "github": "https://github.com/weakbox/FCC-Markdown-Previewer"
     },
     {
-        "id": "3",
+        "id": "5",
         "name": "JavaScript Calculator",
-        "description": "Submission for freeCodeCamp's JavaScript Calculator Project.",
+        "description": "A basic calculator.",
         "thumbnail": "https://github.com/weakbox/FCC-JavaScript-Calculator/raw/main/images/interface.jpg",
         "website": "https://weakbox.github.io/FCC-JavaScript-Calculator/",
         "github": "https://github.com/weakbox/FCC-JavaScript-Calculator"
     },
     {
-        "id": "4",
+        "id": "6",
         "name": "Drum Machine",
-        "description": "Submission for freeCodeCamp's Drum Machine Project.",
+        "description": "A basic drum machine.",
         "thumbnail": "https://github.com/weakbox/FCC-Drum-Machine/raw/main/images/interface.jpg",
         "website": "https://weakbox.github.io/FCC-Drum-Machine/",
         "github": "https://github.com/weakbox/FCC-Drum-Machine"
     },
     {
-        "id": "5",
+        "id": "7",
         "name": "Pomodoro Clock",
-        "description": "Submission for freeCodeCamp's 25 + 5 Clock Project.",
+        "description": "A timer app for managing work and break intervals.",
         "thumbnail": "https://github.com/weakbox/FCC-Pomodoro-Clock/raw/main/images/interface.jpg",
         "website": "https://weakbox.github.io/FCC-Pomodoro-Clock/",
         "github": "https://github.com/weakbox/FCC-Pomodoro-Clock"
     },
     {
-        "id": "6",
+        "id": "8",
         "name": "Random Quote Machine",
-        "description": "Submission for freeCodeCamp's Random Quote Machine Project.",
+        "description": "A small app that displays random quotes.",
         "thumbnail": "https://github.com/weakbox/FCC-Random-Quote-Machine/raw/main/images/interface.jpg",
         "website": "https://weakbox.github.io/FCC-Random-Quote-Machine/",
         "github": "https://github.com/weakbox/FCC-Random-Quote-Machine"

@@ -7,11 +7,16 @@
 
 :root {
   --primary-bg-color: #141e25;
+  --primary-bg-color-light: rgb(241,222,199);
+
   --primary-accent-color: #44ff3e;
+
   --secondary-accent-color: #2c4050;
-  --tertiary-accent-color: #B000B9;
-  --primary-bg-gradient: linear-gradient(0deg, rgba(20,47,67,1) 0%, rgba(176,0,185,1) 75%, rgba(255,95,126,1) 100%);
-  --primary-text-color: rgb(255, 255, 255);
+  --secondary-accent-color-light: rgb(251,247,245);
+
+  --primary-text-color: rgb(251,247,245);
+  --primary-text-color-light: #212529;
+
   --border-color: rgba(44, 43, 64, 0.8);
   --border-radius: 0.5rem;
   --background-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -20,8 +25,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: var(--primary-text-color);
+  color-scheme: dark;
+  color: light-dark(var(--primary-text-color-light), var(--primary-text-color));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

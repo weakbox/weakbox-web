@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: var(--primary-bg-color);
+    background-color: light-dark(var(--primary-bg-color-light), var(--primary-bg-color));
     box-shadow: var(--background-shadow);
 
     /* Semi-wonky line height adjustment. */
@@ -39,12 +39,13 @@
         justify-content: center;
         gap: 1rem;
 
+        /* This is the same as in the project component. Should refactor. */
         .button {
             padding: 0.5rem;
             border: 1px solid var(--border-color);
             border-radius: var(--border-radius);
-            background-color: var(--primary-bg-color);
-            color: var(--primary-text-color);
+            background-color: light-dark(var(--primary-bg-color-light), (--primary-bg-color));
+            color: light-dark(var(--primary-text-color-light), var(--primary-text-color));
             box-shadow: var(--background-shadow);
             text-decoration: none;
             transition: all 150ms ease-out;
