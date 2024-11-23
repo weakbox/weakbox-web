@@ -12,24 +12,24 @@
         "name": "Autonomous Leak Detection Robot",
         "description": "An autonomous robot designed to navigate mazes and detect areas with high humidity to find potential leaks.",
         "thumbnail": "./leakrobot.jpg",
-        "website": "",
-        "github": ""
+        "website": null,
+        "github": null
     },
     {
         "id": "2",
         "name": "Embedded Water Pollution Detector",
         "description": "A mock water pollution detection system built with FreeRTOS and two STM32 Nucleo boards.",
         "thumbnail": "./pollution.jpg",
-        "website": "",
-        "github": ""
+        "website": null,
+        "github": null
     },
     {
         "id": "3",
         "name": "Job Search Android App",
         "description": "An Android app for posting and browsing job listings, developed using Java and Android Studio.",
         "thumbnail": "./jobapp.jpg",
-        "website": "",
-        "github": ""
+        "website": null,
+        "github": null
     },
     {
         "id": "4",
