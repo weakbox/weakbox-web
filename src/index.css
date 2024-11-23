@@ -1,13 +1,16 @@
 * {
-  // border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --primary-bg-color: #141e25;
-  --primary-bg-color-light: rgb(241,222,199);
+  --primary-bg-color: #0b1115;
+  --primary-bg-color-light: rgb(239, 231, 222);
+
+  --secondary-bg-color: #1c2933;
+  --secondary-bg-color-light: rgb(241,222,199);
 
   --primary-accent-color: #44ff3e;
 
@@ -19,18 +22,20 @@
 
   --border-color: rgba(44, 43, 64, 0.8);
   --border-radius: 0.5rem;
-  --background-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --background-shadow: 0px 2px 8px 0px rgba(0,0,0,0.5);
   
   font-family: Rubik, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  // There is support for light/dark switching but I didn't like the look of the light mode for now.
+  /* There is support for light/dark switching but I didn't like the look of the light mode for now. */
   color-scheme: dark;
   color: light-dark(var(--primary-text-color-light), var(--primary-text-color));
+
+  background-color: light-dark(var(--primary-bg-color-light), var(--primary-bg-color));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }

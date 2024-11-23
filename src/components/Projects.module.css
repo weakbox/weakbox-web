@@ -2,7 +2,7 @@
     border-top: 1px solid var(--border-color);
     width: 100%;
     padding: 1rem;
-    background-color: light-dark(var(--secondary-accent-color-light), var(--secondary-accent-color));
+    /* background-color: light-dark(var(--secondary-accent-color-light), var(--secondary-accent-color)); */
 
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
         min-width: 20rem;
         flex: 1 1 0;
         align-items: center;
-        background-color: light-dark(var(--primary-bg-color-light), var(--primary-bg-color));
+        background-color: light-dark(var(--secondary-bg-color-light), var(--secondary-bg-color));
         border-radius: var(--border-radius);
         box-shadow: var(--background-shadow);
 
