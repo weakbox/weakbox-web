@@ -2,7 +2,7 @@
     {
         "id": "0",
         "name": "Fantasy Hockey Dashboard (WIP)",
-        "description": "A visual and in-depth tool to track team performance in an ESPN Fantasy Hockey league.",
+        "description": "A visual and in-depth tool to track team performance in an ESPN Fantasy Hockey league. NOTE: There is a huge update coming to this project, so the current website does not accurately depict the current state.",
         "thumbnail": "./hockeydashboard.jpg",
         "website": "https://weakbox.github.io/Fantasy-Hockey-Dashboard/",
         "github": "https://github.com/weakbox/Fantasy-Hockey-Dashboard"
@@ -16,9 +16,9 @@
     },
     {
         "id": "2",
-        "name": "Guess the Year",
+        "name": "Guess the Year XP",
         "description": "A game where you try to guess the year of certain historical events. Has a nostalgic Windows XP coat of paint.",
-        "thumbnail": "./guess_the_year.jpg",
+        "thumbnail": "https://github.com/weakbox/guess-the-year-game/blob/main/images/interface.png?raw=true",
         "website": "https://weakbox.github.io/guess-the-year-game/",
         "github": "https://github.com/weakbox/guess-the-year-game"
     }
