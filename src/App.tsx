@@ -1,7 +1,9 @@
+import SiteWrapper from "./components/SiteWrapper";
+
 function App() {
   return (
     <>
-      <div>Hello World</div>
+      <SiteWrapper />
     </>
   );
 }
