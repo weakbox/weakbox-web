@@ -1,7 +1,7 @@
 export default function ProjectWrapper() {
   return (
     <>
-      <div>ProjectWrapper</div>
+      <div className="bg-green-200">ProjectWrapper</div>
     </>
   );
 }

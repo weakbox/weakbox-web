@@ -5,12 +5,11 @@ import SiteHeader from "./SiteHeader";
 
 export default function SiteWrapper() {
   return (
-    <>
-      <div>This website is currently under construction! Hang in there!</div>
+    <div className="m-2 overflow-hidden rounded-2xl md:m-8">
       <SiteHeader />
       <ProfileWrapper />
       <ProjectWrapper />
       <SiteFooter />
-    </>
+    </div>
   );
 }

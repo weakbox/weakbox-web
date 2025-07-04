@@ -1,7 +1,7 @@
 export default function ProfileWrapper() {
   return (
     <>
-      <div>ProfileWrapper</div>
+      <div className="bg-red-200">ProfileWrapper</div>
     </>
   );
 }

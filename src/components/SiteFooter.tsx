@@ -1,7 +1,7 @@
 export default function SiteFooter() {
   return (
     <>
-      <div>SiteFooter</div>
+      <div className="bg-yellow-200">SiteFooter</div>
     </>
   );
 }

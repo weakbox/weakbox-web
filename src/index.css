@@ -1,1 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
+
+/* * {
+  border: 1px solid red;
+} */
+
+@theme {  
+  --font-heading: "Nunito", sans-serif; 
+}
