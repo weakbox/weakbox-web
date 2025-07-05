@@ -1,3 +1,7 @@
 export default function ProfileImage() {
-  return <></>;
+  return (
+    <>
+      <div className="w-full">img</div>
+    </>
+  );
 }

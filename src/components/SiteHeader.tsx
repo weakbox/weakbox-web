@@ -6,7 +6,7 @@ export default function SiteHeader() {
 
   return (
     <>
-      <nav className="font-heading flex justify-between gap-16 bg-blue-200 p-4 md:p-8">
+      <nav className="font-heading flex justify-between p-4 font-bold text-gray-800 lg:p-12">
         <a
           className="flex items-center gap-2"
           href="https://www.weakbox.com"
@@ -18,13 +18,15 @@ export default function SiteHeader() {
             alt="Weakbox Web Logo"
             className="h-10 w-10 object-contain"
           />
-          <span className="text-xl font-extrabold">weakbox 2</span>
+          <span className="text-2xl font-extrabold tracking-tight transition-colors duration-100 hover:text-gray-400">
+            weakbox
+          </span>
         </a>
 
         {/* Desktop */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-8 lg:flex">
           <a
-            className="transition-colors duration-100 hover:text-white"
+            className="transition-colors duration-100 hover:text-gray-400"
             href="https://www.linkedin.com/in/weakbox/"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +34,7 @@ export default function SiteHeader() {
             LinkedIn
           </a>
           <a
-            className="transition-colors duration-100 hover:text-white"
+            className="transition-colors duration-100 hover:text-gray-400"
             href="https://soundcloud.com/weakbox"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,7 +42,7 @@ export default function SiteHeader() {
             Soundcloud
           </a>
           <a
-            className="transition-colors duration-100 hover:text-white"
+            className="w-fit rounded-full border-2 border-gray-800 bg-white px-8 py-2 font-extrabold transition-colors duration-100 hover:border-gray-400 hover:text-gray-400"
             href="mailto:connor@weakbox.com"
           >
             Contact
@@ -48,7 +50,7 @@ export default function SiteHeader() {
         </div>
 
         {/* Mobile (Add burger menu functionality) */}
-        <div className="flex items-center md:hidden">
+        <div className="flex items-center lg:hidden">
           <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
             ≡
           </button>
@@ -56,7 +58,7 @@ export default function SiteHeader() {
       </nav>
 
       {isOpen && (
-        <div className="font-heading flex items-center justify-between gap-8 bg-blue-200 px-4 pb-4 md:hidden md:px-8 md:pb-8">
+        <div className="font-heading flex items-center justify-between gap-8 px-4 pb-4 lg:hidden lg:px-8 lg:pb-8">
           <a
             className="transition-colors duration-100 hover:text-white"
             href="https://www.linkedin.com/in/weakbox/"

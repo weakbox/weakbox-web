@@ -5,7 +5,7 @@ import SiteHeader from "./SiteHeader";
 
 export default function SiteWrapper() {
   return (
-    <div className="m-2 overflow-hidden rounded-2xl md:m-8">
+    <div className="m-2 flex flex-col gap-4 overflow-hidden rounded-2xl border-2 border-gray-200 bg-gray-50 lg:m-16">
       <SiteHeader />
       <ProfileWrapper />
       <ProjectWrapper />
