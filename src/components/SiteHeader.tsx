@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/logo.png";
 
 export default function SiteHeader() {
@@ -52,7 +54,7 @@ export default function SiteHeader() {
         {/* Mobile (Add burger menu functionality) */}
         <div className="flex items-center lg:hidden">
           <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
-            ≡
+            <FontAwesomeIcon icon={faBars} />
           </button>
         </div>
       </nav>

@@ -39,7 +39,9 @@ export default function SiteFooter() {
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>
-      <p className="text-xs">© 2025 Connor McLeod</p>
+      <p className="text-center text-xs">
+        Built from scratch with React and Tailwind. © 2025 Connor McLeod
+      </p>
     </div>
   );
 }
