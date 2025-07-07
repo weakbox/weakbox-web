@@ -1,32 +1,27 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/logo.png";
+import { faBars, faBoxOpen } from "@fortawesome/free-solid-svg-icons";
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <nav className="font-heading flex justify-between p-4 font-bold text-gray-800 lg:p-12">
+      <nav className="col-span-full flex w-full justify-between bg-gray-200 p-4 font-bold sm:p-8">
         <a
           className="flex items-center gap-2"
           href="https://www.weakbox.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src={logo}
-            alt="Weakbox Web Logo"
-            className="h-10 w-10 object-contain"
-          />
+          <FontAwesomeIcon icon={faBoxOpen} className="text-2xl" />
           <span className="text-2xl font-extrabold tracking-tight transition-colors duration-100 hover:text-gray-400">
             weakbox
           </span>
         </a>
 
         {/* Desktop */}
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden items-center gap-8 sm:flex">
           <a
             className="transition-colors duration-100 hover:text-gray-400"
             href="https://www.linkedin.com/in/weakbox/"
@@ -44,7 +39,7 @@ export default function SiteHeader() {
             Soundcloud
           </a>
           <a
-            className="w-fit rounded-full border-2 border-gray-800 bg-white px-8 py-2 font-extrabold transition-colors duration-100 hover:border-gray-400 hover:text-gray-400"
+            className="w-fit rounded-full bg-gray-800 px-8 py-2 font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-600"
             href="mailto:connor@weakbox.com"
           >
             Contact
@@ -52,7 +47,7 @@ export default function SiteHeader() {
         </div>
 
         {/* Mobile (Add burger menu functionality) */}
-        <div className="flex items-center lg:hidden">
+        <div className="flex items-center sm:hidden">
           <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
             <FontAwesomeIcon icon={faBars} />
           </button>
@@ -60,7 +55,7 @@ export default function SiteHeader() {
       </nav>
 
       {isOpen && (
-        <div className="font-heading flex items-center justify-between gap-8 px-4 pb-4 lg:hidden lg:px-8 lg:pb-8">
+        <div className="font-heading flex items-center justify-between gap-8 px-4 pb-4 sm:hidden sm:px-8 sm:pb-8">
           <a
             className="transition-colors duration-100 hover:text-white"
             href="https://www.linkedin.com/in/weakbox/"

@@ -1,17 +1,22 @@
-import ProfileWrapper from "./ProfileWrapper";
+import ProfileBio from "./ProfileBio";
+import ProfileCard from "./ProfileCard";
 import ProjectWrapper from "./ProjectWrapper";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
 
+import ProfilePicture from "../assets/profile.jpg";
+
 export default function SiteWrapper() {
   return (
-    <div className="flex w-full justify-center">
-      <div className="m-2 flex max-w-6xl flex-col gap-4 overflow-hidden rounded-2xl border-2 border-gray-200 bg-gray-50 lg:m-16">
-        <SiteHeader />
-        <ProfileWrapper />
-        <ProjectWrapper />
-        <SiteFooter />
-      </div>
+    <div className="font-main mx-auto grid max-w-screen-xl justify-items-center gap-4 bg-gray-100 text-gray-800 sm:grid-cols-2">
+      <SiteHeader />
+      <ProfileBio />
+      <ProfileCard
+        image={ProfilePicture}
+        description={"A simple test of what a card might look like."}
+      />
+      <ProjectWrapper />
+      <SiteFooter />
     </div>
   );
 }

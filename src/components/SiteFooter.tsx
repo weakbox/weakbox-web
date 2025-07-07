@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function SiteFooter() {
   return (
-    <div className="font-heading flex flex-col items-center justify-center gap-4 p-4 text-gray-800 lg:p-8">
+    <div className="col-span-full flex w-full flex-col items-center justify-center gap-2 bg-gray-200 p-4 sm:p-8">
       <div className="flex flex-row items-center gap-4">
         <a
           className="transition-colors duration-100 hover:text-gray-400"
