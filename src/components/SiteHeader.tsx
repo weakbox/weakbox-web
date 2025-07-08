@@ -9,14 +9,14 @@ export default function SiteHeader() {
     <>
       <nav className="col-span-full flex w-full justify-between bg-gray-200 p-4 font-bold sm:p-8">
         <a
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 transition-colors duration-100 hover:text-gray-400"
           href="https://www.weakbox.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faBoxOpen} className="text-2xl" />
-          <span className="text-2xl font-extrabold tracking-tight transition-colors duration-100 hover:text-gray-400">
-            weakbox
+          <span className="text-2xl font-extrabold tracking-tight">
+            weakbox2
           </span>
         </a>
 
@@ -39,7 +39,7 @@ export default function SiteHeader() {
             Soundcloud
           </a>
           <a
-            className="w-fit rounded-full bg-gray-800 px-8 py-2 font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-600"
+            className="w-fit rounded-full bg-gray-800 px-8 py-2 font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400"
             href="mailto:connor@weakbox.com"
           >
             Contact

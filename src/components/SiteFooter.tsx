@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
-import { faSoundcloud } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faSoundcloud,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function SiteFooter() {
   return (
@@ -40,8 +42,9 @@ export default function SiteFooter() {
         </a>
       </div>
       <p className="text-center text-xs">
-        Built from scratch with React and Tailwind. © 2025 Connor McLeod
+        Built from scratch with React & Tailwind.
       </p>
+      <p className="text-center text-xs">© 2025 Connor McLeod</p>
     </div>
   );
 }
