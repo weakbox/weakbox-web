@@ -10,7 +10,7 @@ export default function ProfileBio() {
         <p className="">
           I'm a Computer Engineer based in{" "}
           <FontAwesomeIcon
-            className="text-red-600"
+            className="text-red-800"
             icon={faCanadianMapleLeaf}
           />{" "}
           Halifax, Nova Scotia, currently working as a Graduate Software
@@ -22,7 +22,7 @@ export default function ProfileBio() {
         </p>
       </div>
       <a
-        className="w-fit rounded-full bg-gray-800 px-8 py-2 text-2xl font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400"
+        className="w-fit rounded-full bg-gray-800 px-8 py-4 text-2xl font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400"
         href="mailto:connor@weakbox.com"
       >
         Get in Touch!

@@ -10,7 +10,7 @@ export default function SiteWrapper() {
   return (
     <div className="font-main mx-auto flex max-w-screen-xl flex-col items-center justify-center bg-gray-100 text-gray-800">
       <SiteHeader />
-      <div className="grid items-center justify-center justify-items-center gap-8 p-8 sm:grid-cols-2 sm:p-16">
+      <div className="grid items-center justify-center justify-items-center gap-8 p-8 sm:p-16 lg:grid-cols-2">
         <ProfileBio />
         <ProfileCard
           image={ProfilePicture}
