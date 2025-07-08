@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faBoxOpen } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faBoxOpen } from "@fortawesome/free-solid-svg-icons";
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,15 +49,18 @@ export default function SiteHeader() {
         {/* Mobile (Add burger menu functionality) */}
         <div className="flex items-center sm:hidden">
           <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon
+              className="text-2xl"
+              icon={isOpen ? faXmark : faBars}
+            />
           </button>
         </div>
       </nav>
 
       {isOpen && (
-        <div className="font-heading flex items-center justify-between gap-8 px-4 pb-4 sm:hidden sm:px-8 sm:pb-8">
+        <div className="flex w-full items-center justify-between bg-gray-200 px-8 py-4 font-bold sm:hidden sm:p-8">
           <a
-            className="transition-colors duration-100 hover:text-white"
+            className="transition-colors duration-100 hover:text-gray-400"
             href="https://www.linkedin.com/in/weakbox/"
             target="_blank"
             rel="noopener noreferrer"
@@ -65,7 +68,7 @@ export default function SiteHeader() {
             LinkedIn
           </a>
           <a
-            className="transition-colors duration-100 hover:text-white"
+            className="transition-colors duration-100 hover:text-gray-400"
             href="https://soundcloud.com/weakbox"
             target="_blank"
             rel="noopener noreferrer"
@@ -73,7 +76,7 @@ export default function SiteHeader() {
             Soundcloud
           </a>
           <a
-            className="transition-colors duration-100 hover:text-white"
+            className="w-fit rounded-full bg-gray-800 px-8 py-2 font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400"
             href="mailto:connor@weakbox.com"
           >
             Contact
