@@ -16,7 +16,7 @@ export default function SiteHeader() {
         >
           <FontAwesomeIcon icon={faBoxOpen} className="text-2xl" />
           <span className="text-2xl font-extrabold tracking-tight">
-            weakbox2
+            weakbox
           </span>
         </a>
 
@@ -58,7 +58,7 @@ export default function SiteHeader() {
       </nav>
 
       {isOpen && (
-        <div className="flex w-full items-center justify-between bg-gray-200 px-8 py-4 font-bold sm:hidden sm:p-8">
+        <div className="flex w-full items-center justify-between bg-gray-200 px-8 py-4 font-bold sm:hidden sm:p-8 dark:bg-gray-950">
           <a
             className="transition-colors duration-100 hover:text-gray-400"
             href="https://www.linkedin.com/in/weakbox/"
@@ -76,7 +76,7 @@ export default function SiteHeader() {
             Soundcloud
           </a>
           <a
-            className="w-fit rounded-full bg-gray-800 px-8 py-2 font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400"
+            className="w-fit rounded-full bg-gray-800 px-8 py-2 font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400 dark:bg-gray-100 dark:text-gray-950"
             href="mailto:connor@weakbox.com"
           >
             Contact

@@ -50,7 +50,7 @@ export default function ProfileCard({
   thumbnail = "",
 }: ProfileCardProps) {
   return (
-    <div className="dark:border-gray-00 flex w-full flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
+    <div className="flex w-full flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
       <img
         src={thumbnail}
         alt={`${title} project thumbnail.`}
