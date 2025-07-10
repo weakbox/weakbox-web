@@ -9,14 +9,25 @@ const tagColors = {
   typescript: "bg-[#3178c6] text-gray-100",
   react: "bg-[#61dafb] text-gray-800",
   c: "bg-[#00599C] text-gray-100",
-  assembly: "bg-gray-800 text-gray-100",
+  assembly: "bg-gray-900 text-gray-100",
   default: "bg-gray-300 text-gray-800",
 };
+
+type ProfileCardProps = {
+  title?: string;
+  description?: string;
+  tags?: string[];
+  website?: string;
+  github?: string;
+  thumbnail?: string;
+};
+
+type ValidTag = keyof typeof tagColors;
 
 const renderTags = (tags: string[]) => {
   return tags.map((tag, index) => {
     const lowerTag = tag.toLowerCase();
-    const colorClass = tagColors[lowerTag] || tagColors.default;
+    const colorClass = tagColors[lowerTag as ValidTag] || tagColors.default;
     return (
       <div
         key={index}
@@ -28,7 +39,7 @@ const renderTags = (tags: string[]) => {
   });
 };
 
-// Cards should have a minimum height of 72 to ensure consistent layout.
+// Cards should have a minimum height of 144 to ensure consistent layout.
 
 export default function ProfileCard({
   title = "Project",
@@ -37,9 +48,9 @@ export default function ProfileCard({
   website = "",
   github = "",
   thumbnail = "",
-}) {
+}: ProfileCardProps) {
   return (
-    <div className="flex w-full flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-gray-50">
+    <div className="dark:border-gray-00 flex w-full flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
       <img
         src={thumbnail}
         alt={`${title} project thumbnail.`}
@@ -50,7 +61,7 @@ export default function ProfileCard({
           <div className="mb-1 flex flex-wrap gap-2">
             {tags && renderTags(tags)}
           </div>
-          <div className="w-fit border-b-2 border-gray-200 text-3xl font-black">
+          <div className="w-fit border-b-2 border-gray-200 text-3xl font-black dark:border-gray-600">
             {title}
           </div>
           <div className="">{description}</div>
@@ -61,7 +72,7 @@ export default function ProfileCard({
               href={website}
               target="_blank"
               rel="noopener noreferrer"
-              className="truncate rounded-full border-2 border-gray-800 px-3 py-1 font-bold transition-colors duration-100 hover:bg-gray-200"
+              className="truncate rounded-full border-2 border-gray-800 px-3 py-1 font-bold transition-colors duration-100 hover:bg-gray-200 dark:border-gray-600 dark:hover:bg-gray-600"
             >
               <FontAwesomeIcon icon={faGlobe} /> Website
             </a>
@@ -71,7 +82,7 @@ export default function ProfileCard({
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="truncate rounded-full border-2 border-gray-800 px-3 py-1 font-bold transition-colors duration-100 hover:bg-gray-200"
+              className="truncate rounded-full border-2 border-gray-800 px-3 py-1 font-bold transition-colors duration-100 hover:bg-gray-200 dark:border-gray-600 dark:hover:bg-gray-600"
             >
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </a>

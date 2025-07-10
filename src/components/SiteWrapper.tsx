@@ -12,7 +12,7 @@ import GuessTheYearXPThumbnail from "../assets/guesstheyearxp-thumbnail.png";
 
 export default function SiteWrapper() {
   return (
-    <div className="font-main mx-auto flex max-w-screen-xl flex-col items-center justify-center bg-gray-100 text-gray-800">
+    <div className="font-main mx-auto flex max-w-screen-xl flex-col items-center justify-center bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
       <SiteHeader />
       <div className="grid items-center justify-center justify-items-center gap-8 p-8 sm:p-16 lg:grid-cols-2">
         <ProfileBio />

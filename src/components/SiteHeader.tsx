@@ -7,7 +7,7 @@ export default function SiteHeader() {
 
   return (
     <>
-      <nav className="col-span-full flex w-full justify-between bg-gray-200 p-4 font-bold sm:p-8">
+      <nav className="col-span-full flex w-full justify-between bg-gray-200 p-4 font-bold sm:p-8 dark:bg-gray-950">
         <a
           className="flex items-center gap-2 transition-colors duration-100 hover:text-gray-400"
           href="https://www.weakbox.com"
@@ -39,7 +39,7 @@ export default function SiteHeader() {
             Soundcloud
           </a>
           <a
-            className="w-fit rounded-full bg-gray-800 px-8 py-2 font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400"
+            className="w-fit rounded-full bg-gray-800 px-8 py-2 font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400 dark:bg-gray-100 dark:text-gray-950"
             href="mailto:connor@weakbox.com"
           >
             Contact

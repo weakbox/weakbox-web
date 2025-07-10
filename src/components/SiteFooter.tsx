@@ -8,7 +8,7 @@ import {
 
 export default function SiteFooter() {
   return (
-    <div className="col-span-full flex w-full flex-col items-center justify-center gap-2 bg-gray-200 p-4 sm:p-8">
+    <div className="col-span-full flex w-full flex-col items-center justify-center gap-2 bg-gray-200 p-4 sm:p-8 dark:bg-gray-950">
       <div className="flex flex-row items-center gap-4">
         <a
           className="transition-colors duration-100 hover:text-gray-400"
