@@ -11,9 +11,9 @@ import ProfileWrapper from "./ProfileWrapper";
 
 export default function SiteWrapper() {
   return (
-    <div className="font-main mx-auto flex max-w-screen-xl flex-col items-center justify-center bg-gray-100 text-gray-800 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100">
+    <div className="dark:text-gray-xl mx-auto flex max-w-screen-xl flex-col items-center justify-center bg-gray-100 dark:bg-gray-900">
       <SiteHeader />
-      <div className="grid items-center justify-center justify-items-center gap-4 p-4 sm:gap-8 sm:p-16 md:grid-cols-2">
+      <main className="grid items-center justify-center justify-items-center gap-4 p-4 sm:gap-8 sm:p-16 md:grid-cols-2">
         <ProfileWrapper />
         <ProjectHeader />
         <ProjectCard
@@ -39,7 +39,7 @@ export default function SiteWrapper() {
           github="https://github.com/weakbox/guess-the-year-game"
           thumbnail={GuessTheYearXPThumbnail}
         />
-      </div>
+      </main>
       <SiteFooter />
     </div>
   );

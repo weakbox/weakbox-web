@@ -8,8 +8,8 @@ import {
 
 export default function SiteFooter() {
   return (
-    <div className="col-span-full flex w-full flex-col items-center justify-center gap-2 bg-gray-200 p-4 sm:p-8 dark:bg-gray-950">
-      <div className="flex flex-row items-center gap-4">
+    <footer className="col-span-full flex w-full flex-col items-center justify-center gap-2 bg-gray-200 p-4 sm:p-8 dark:bg-gray-950">
+      <nav className="flex flex-row items-center gap-4">
         <a
           className="transition-colors duration-100 hover:text-gray-400"
           href="https://www.linkedin.com/in/weakbox/"
@@ -40,11 +40,11 @@ export default function SiteFooter() {
         >
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-      </div>
+      </nav>
       <p className="text-center text-xs">
         Built from scratch with React & Tailwind.
       </p>
       <p className="text-center text-xs">© 2025 Connor McLeod</p>
-    </div>
+    </footer>
   );
 }
