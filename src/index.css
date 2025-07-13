@@ -8,3 +8,13 @@
 @theme {  
   --font-main: "Nunito", sans-serif; 
 }
+
+@layer base {
+  body {
+    @apply bg-gray-200 xl:bg-white  xl:dark:bg-black dark:bg-gray-950 dark:text-gray-100 font-main text-gray-800 transition-colors duration-500;
+  }
+
+  #root {
+    @apply h-full w-full;
+  }
+}

@@ -1,14 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons";
 
-// This is taking up slightly less height that the parent allows for some reason.
-
 export default function ProfileBio() {
   return (
     <div className="flex min-h-72 w-full flex-1 flex-col justify-between gap-8">
       <div className="flex flex-col gap-2">
-        <p className="font-extrabold text-gray-400">Hi out there! It's me,</p>
-        <p className="text-6xl font-black tracking-tight">Connor McLeod.</p>
+        <h1 className="font-extrabold text-gray-400">
+          Hi out there! It's me,
+          <span className="block text-6xl font-black tracking-tight text-gray-800 dark:text-gray-100">
+            Connor McLeod.
+          </span>
+        </h1>
         <p>
           I'm a Computer Engineer based in{" "}
           <FontAwesomeIcon

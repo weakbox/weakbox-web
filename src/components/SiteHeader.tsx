@@ -6,8 +6,8 @@ export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <nav className="col-span-full flex w-full justify-between bg-gray-200 p-4 font-bold sm:p-8 dark:bg-gray-950">
+    <header className="col-span-full flex w-full flex-col justify-between gap-4 bg-gray-200 p-4 font-bold sm:flex-row sm:p-8 dark:bg-gray-950">
+      <div className="flex w-full items-center justify-between">
         <a
           className="flex items-center gap-2 transition-colors duration-100 hover:text-gray-400"
           href="https://www.weakbox.com"
@@ -21,7 +21,7 @@ export default function SiteHeader() {
         </a>
 
         {/* Desktop */}
-        <div className="hidden items-center gap-8 sm:flex">
+        <nav className="hidden items-center gap-8 sm:flex">
           <a
             className="transition-colors duration-100 hover:text-gray-400"
             href="https://www.linkedin.com/in/weakbox/"
@@ -44,9 +44,9 @@ export default function SiteHeader() {
           >
             Contact
           </a>
-        </div>
+        </nav>
 
-        {/* Mobile (Add burger menu functionality) */}
+        {/* Mobile */}
         <div className="flex items-center sm:hidden">
           <button className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
             <FontAwesomeIcon
@@ -55,10 +55,11 @@ export default function SiteHeader() {
             />
           </button>
         </div>
-      </nav>
+      </div>
 
+      {/* The styling on this could be improved. It is basically exactly like the desktop navbar, so it's possible they could be extracted and combined. */}
       {isOpen && (
-        <div className="flex w-full items-center justify-between bg-gray-200 px-8 py-4 font-bold sm:hidden sm:p-8 dark:bg-gray-950">
+        <nav className="flex w-full items-center justify-between gap-8 px-4 sm:hidden">
           <a
             className="transition-colors duration-100 hover:text-gray-400"
             href="https://www.linkedin.com/in/weakbox/"
@@ -81,8 +82,8 @@ export default function SiteHeader() {
           >
             Contact
           </a>
-        </div>
+        </nav>
       )}
-    </>
+    </header>
   );
 }
