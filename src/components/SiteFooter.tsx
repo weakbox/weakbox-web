@@ -44,7 +44,7 @@ export default function SiteFooter() {
       <p className="text-center text-xs">
         Built from scratch with React & Tailwind.
       </p>
-      <p className="text-center text-xs">© 2025 Connor McLeod</p>
+      <p className="text-center text-xs">© 2026 Connor McLeod</p>
     </footer>
   );
 }

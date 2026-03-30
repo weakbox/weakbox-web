@@ -12,18 +12,18 @@ export default function ProfileBio() {
           </span>
         </h1>
         <p>
-          I'm a Computer Engineer based in{" "}
+          I'm a Software Engineer based in{" "}
           <FontAwesomeIcon
             className="text-red-800 dark:text-red-400"
             icon={faCanadianMapleLeaf}
           />{" "}
-          Halifax, Nova Scotia, currently working as a Graduate Software
+          Halifax, Nova Scotia, currently working as a Trainee Software
           Engineer at Kainos. I earned my degree in Electrical Engineering from
           Dalhousie University in 2024, where I fell in love with programming.
           Since then, I've been developing my skills as a full-stack developer
           by getting hands-on and building the ideas I'm passionate about. When
           I'm not coding, you'll find me tinkering in FL Studio, lifting at the
-          gym, playing Counter-Strike, or cheering on the Edmonton Oilers.
+          gym, playing Counter-Strike 2, or cheering on the Edmonton Oilers.
         </p>
       </div>
       <a
