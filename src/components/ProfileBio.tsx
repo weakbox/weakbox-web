@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCanadianMapleLeaf } from "@fortawesome/free-brands-svg-icons";
+import ExternalLink from "./ExternalLink";
 
 export default function ProfileBio() {
   return (
@@ -7,11 +8,11 @@ export default function ProfileBio() {
       <div className="flex flex-col gap-2">
         <h1 className="font-extrabold text-gray-400">
           Hi out there! It's me,
-          <span className="block text-6xl font-black tracking-tight text-gray-800 dark:text-gray-100">
+          <span className="block text-4xl font-black tracking-tight text-gray-800 sm:text-5xl lg:text-6xl dark:text-gray-100">
             Connor McLeod.
           </span>
         </h1>
-        <p>
+        <p className="leading-relaxed text-pretty">
           I'm a Software Engineer based in{" "}
           <FontAwesomeIcon
             className="text-red-800 dark:text-red-400"
@@ -26,12 +27,13 @@ export default function ProfileBio() {
           gym, playing Counter-Strike 2, or cheering on the Edmonton Oilers.
         </p>
       </div>
-      <a
-        className="w-fit rounded-full bg-gray-800 px-8 py-2 text-2xl font-extrabold text-gray-100 transition-colors duration-100 hover:bg-gray-400 dark:bg-gray-100 dark:text-gray-950"
+      <ExternalLink
         href="mailto:connor@weakbox.com"
+        variant="pill"
+        className="text-lg sm:text-2xl"
       >
         Contact
-      </a>
+      </ExternalLink>
     </div>
   );
 }
